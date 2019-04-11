@@ -42,7 +42,7 @@ export default class Box extends Component {
             data.append('file', file);
             api.post(`boxes/${box}/files`, data)
         });
-    }
+    };
 
   render() {
     return (
