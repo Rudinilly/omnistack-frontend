@@ -21,6 +21,7 @@ export default class Box extends Component {
         this.setState({ 
             box: response.data
         });
+    }
 
     subscribeToNewFiles = () => {
         const box  = this.props.match.params.id;
@@ -42,7 +43,7 @@ export default class Box extends Component {
             data.append('file', file);
             api.post(`boxes/${box}/files`, data)
         });
-    };
+    }
 
   render() {
     return (
